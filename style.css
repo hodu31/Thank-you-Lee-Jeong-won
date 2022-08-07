@@ -103,13 +103,21 @@
   }
 
   #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-backgroundblue);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
     height: 90px;
+    transition: var(--animation-duration) ease-in-out;
+  }
+
+  #navbar.navbar--dark {
+    background-color: var(--color-backgroundblue);
+    padding: 8px;
   }
 
   .navbar__menu {
@@ -149,6 +157,7 @@
   #home {
     background: url('imgs/background.png')  center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
   }
 
