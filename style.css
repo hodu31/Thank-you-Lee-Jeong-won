@@ -113,6 +113,7 @@
     padding: 16px;
     height: 90px;
     transition: var(--animation-duration) ease-in-out;
+    z-index: 1;
   }
 
   #navbar.navbar--dark {
