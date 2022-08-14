@@ -41,7 +41,7 @@ const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
     if (window.scrollY > homeHeight /2) {
         arrowUp.classList.add('visible');
-    }
+    } 
     else {
         arrowUp.classList.remove('visible');
     }
@@ -51,6 +51,30 @@ document.addEventListener('scroll', () => {
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 })
+
+//Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectsContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null) {
+        return;
+    }
+    projectsContainer.classList.add('anim-out');
+    setTimeout(() => {
+        projects.forEach((projects) => {
+            console.log(projects.dataset.type);
+            if(filter =='*' || filter === projects.dataset.type) {
+              projects.classList.remove('invisible');
+            }  else {
+              projects.classList.add('invisible');
+            }
+          });
+        projectsContainer.classList.remove('anim-out');
+    }, 300)
+
+});
 
 function scrollIntoView(selector) {
     const scrollTO = document.querySelector(selector);
