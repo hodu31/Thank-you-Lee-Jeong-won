@@ -20,15 +20,12 @@
   <nav id="navbar">
     <div class="navbar__logo">
       <img class="faviconimg" src="imgs/favicon.png" alt="">
-      <a href="#">De31</a>
+      <a href="#">사랑합니다 이정원 강사님</a>
     </div>
     <ul class="navbar__menu">
-      <li class="navbar__menu__item active" data-link="#home">Home</li>
-      <li class="navbar__menu__item" data-link="#about">About</li>
-      <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#work">My work</li>
-      <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
-      <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      <li class="navbar__menu__item active" data-link="#home">강사님에 대한 고마움</li>
+      <li class="navbar__menu__item" data-link="#about">개인 멘트</li>
+      <li class="navbar__menu__item" data-link="#skills">개인 멘트 추가</li>
     </ul>
   
 <!-- Toggle button -->
@@ -50,59 +47,15 @@
   <!-- about -->
   <section id="about" class="section section__container">
       <h1>About me</h1>
-      <p>  Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ut pretium 
-          tempor. ut eget imperdiet neque. in volutpat ante semper diam milestiem,
-          et aliquam erat laoreet. Sed sit amet arcu aliquetm molestie justo at,auctor
-          nunc. Phasellus ligula ipsum, volutpat eget semper id,viverra eget nibh. 
-          Suspendisse luctus mattis cur
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-              <i class="fab fa-html5"></i>
-          </div>
-          <div class="major__tittle">Front-end</div>
-          <div class="major__description">
-              HTML, CSS, JavaScript, TypeScript,
-              <br />React, Vue, Web APIs
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-              <i class="fas fa-mobile"></i>
-          </div>
-          <div class="major__tittle">Front-end</div>
-          <div class="major__description">
-              Android, iOS, React Native, Flutter,
-              <br />Java, Swift, Kotlin
-          </div>
-        </div>  
-        <div class="major">
-          <div class="major__icon">
-              <i class="fas fa-server"></i>
-          </div>
-          <div class="major__tittle">Front-end</div>
-          <div class="major__description">
-              Java, JavaScript, Go, NodeJS,
-              <br />Rest APIs, GraphGL
-          </div>
-        </div>
-        </div>
-        <div class="about__jobs">
-          <div class="job">
-              <img 
-              src="imgs/navy.png" 
-              alt="navy" 
-              class="job__logo">
-              <div class="job__description">
-                <p class="job__name">
-                  Currently working at Navy as engineer
-              </p>
-              <p class="job__period">2019 march - Untill now</p>
-              </div>
-          </div>
-          <div class="job"></div>
-        </div>
+      <div class="container">
+        <h1>강사님께 감사를 전하는 롤링페이퍼</h1>
+        <form id="messageForm">
+            <textarea id="messageInput" placeholder="강사님께 전할 메시지를 입력하세요"></textarea>
+            <button type="submit">메시지 추가</button>
+        </form>
+        <div id="messages"></div>
+      </div>
+      
   </section>
   <!-- skills -->
 <section id="skills" class="section">
