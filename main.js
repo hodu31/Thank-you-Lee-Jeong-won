@@ -33,7 +33,7 @@ navbarToggleBtn.addEventListener('click', ()=> {
 // Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
-    scrollIntoView('#contact')
+    scrollIntoView('#about')
 })
 
 // Make home slowly fade to transparent as the window scrolls down

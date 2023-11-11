@@ -1,319 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>de31's Portfolio</title>
-  <meta name="description" content="de31's practice Portfolio"/>
-  <meta name="author" content="de31" />
-  <link rel="icon" type="image/png" href="imgs/favicon.png"/>
-  <script src="https://kit.fontawesome.com/6aacd21373.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강사님께</title>
+    <meta name="description" content="de31's practice Portfolio" />
+    <meta name="author" content="de31" />
+    <link rel="icon" type="image/png" href="imgs/heart.gif" />
+    <script src="https://kit.fontawesome.com/6aacd21373.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin='anoymous'>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
 </head>
+
 <body>
-  <!-- navbar -->
-  <nav id="navbar">
-    <div class="navbar__logo">
-      <img class="faviconimg" src="imgs/favicon.png" alt="">
-      <a href="#">사랑합니다 이정원 강사님</a>
-    </div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu__item active" data-link="#home">강사님에 대한 고마움</li>
-      <li class="navbar__menu__item" data-link="#about">개인 멘트</li>
-      <li class="navbar__menu__item" data-link="#skills">개인 멘트 추가</li>
-    </ul>
-  
-<!-- Toggle button -->
-<button class="navbar__toggle-btn">
-  <i class="fas fa-bars"></i>
-</button>
-</nav>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo" style="margin-top: 2px; margin-left: 5%; color: #2D2D2D;">
+            <img class="faviconimg" src="imgs/heart.gif" alt="" />
+            <span>빅데이터 전문가 양성과정 2기</span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">
+        </ul>
 
-  <!-- home -->
-  <section id="home">
-     <div class="home__container">
-      <img src="imgs/profile.png" alt="De31's profile photo" class="home__avatar">
-      <h1 class="home__tittle">Hello, <br/>I'm De31</h1>
-      <h2 class="home__description">de31 who is no way to save</h2>
-      <button class="home__contact">Contact Me</button>
-     </div>
-  </section>
-
-  <!-- about -->
-  <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <div class="container">
-        <h1>강사님께 감사를 전하는 롤링페이퍼</h1>
-        <form id="messageForm">
-            <textarea id="messageInput" placeholder="강사님께 전할 메시지를 입력하세요"></textarea>
-            <button type="submit">메시지 추가</button>
-        </form>
-        <div id="messages"></div>
-      </div>
-      
-  </section>
-  <!-- skills -->
-<section id="skills" class="section">
-<div class="section__container">
-  <h1>Skills</h1>
-  <h2>skills & Attribute</h2>
-  <p>
-    Experience with all phases of the software life-cycle. Passion for
-    learning new technologies. Capable of working within a team environment
-    and independently. Ability to plan and time schedule, work under strict
-    time pressure and adapt quickly when needed. sadfdsfadlkfj
-  </p>
-  <div class="skillset">
-      <div class="skillset__left">
-          <h3 class="skillset__tittle">Skills</h3>
-          <div class="skill">
-              <div class="skill__description">
-                  <span>HTML</span>
-                  <span>99%</span>
-              </div>
-              <div class="skill__bar">
-                  <div class="skill__value" style="width: 99%;"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill__description">
-                  <span>CSS</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 90%;"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill__description">
-                  <span>JavaScript</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 90%;"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill__description">
-                  <span>TypeScript</span>
-                  <span>80%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 80%;"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill__description">
-                  <span>React</span>
-                  <span>88%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 88%;"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="skill__description">
-                  <span>NodeJS</span>
-                  <span>77%</span>
-                </div>
-                <div class="skill__bar">
-                  <div class="skill__value" style="width: 77%;"></div>
-              </div>
-          </div>
-        </div>
-      <div class="skillset__right">
-          <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                  <li><span>Visual Studio Code</span></li>
-                  <li><span>IntelliJ</span></li>
-                  <li><span>Android Studio Code</span></li>
-                  <li><span>iOS development tools</span></li>
-                  <li><span>Sketch app</span></li>
-              </ul>
-          </div>
-          <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-                <li><span>Scrum master</span></li>
-                <li><span>Math</span></li>
-          </div>
-      </div>
-  </div>
-</div>
-  </section>
-  <!-- work -->
-  <section id="work" class="section">
-     <div class="section__container">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-          <button class="category__btnselected" data-filter="*">
-            All <span class="category__count">8</span>
-          </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end <span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="back-end">
-            Back-end <span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="mobile">
-            Mobile <span class="category__count">2</span>
-          </button>
-        </div>
-        <div class="work__projects">
-          <a 
-          href="htttps://github.com/dream-ellie/youtube-site" 
-          class="project" 
-          target="blank" 
-          data-type="front-end"
-          >
-            <img
-              src="imgs/projects/youtube.png"
-              alt="Youtube"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Youtube Site</h3>
-              <span>Clone coding with HTML, CSS</span>
-            </div>
-            </a>
-            <a
-        href="https://github.com/dream-ellie/responsive-nav-bar"
-        class="project"
-        data-type="front-end"
-        target="blank"
-      >
-        <img
-          class="project__img"
-          src="imgs/projects/navbar.png"
-          alt="navbar"
-        />
-        <div class="project__description">
-          <h3>Responsive Navbar</h3>
-          <span>HTML, CSS with media query</span>
-        </div>
-      </a>
-      <a
-        href="https://github.com/dream-ellie/responsive-nav-bar"
-        class="project"
-        data-type="front-end"
-        target="blank"
-      >
-        <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
-        <div class="project__description">
-          <h3>Shopping mall game</h3>
-          <span>HTML, CSS, JavaScript, Json</span>
-        </div>
-      </a>
-      <a href="" class="project" data-type="back-end">
-        <img class="project__img" src="imgs/projects/game.png" alt="" />
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>Explanation</span>
-        </div>
-      </a>
-      <a href="" class="project" data-type="back-end">
-        <img class="project__img" src="imgs/projects/game.png" alt="" />
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>Explanation</span>
-        </div>
-      </a>
-      <a href="" class="project" data-type="mobile">
-        <img class="project__img" src="imgs/projects/game.png" alt="" />
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>Explanation</span>
-        </div>
-      </a>
-      <a href="" class="project" data-type="mobile">
-        <img class="project__img" src="imgs/projects/game.png" alt="" />
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>Explanation</span>
-        </div>
-      </a>
-      <a href="" class="project" data-type="mobile">
-        <img class="project__img" src="imgs/projects/game.png" alt="" />
-        <div class="project__description">
-          <h3>Project</h3>
-          <span>Explanation</span>
-        </div>
-      </a>
-    </div>
-    </div>
-  </section>
-
-     </div>
-  <!-- Testimonials -->
-  <section id="testimonials" class="section">
-      <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="imgs/testimonial/people1.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                fuga libero nulla eveniet aperiam laborum, quis provident
-                quibusdam officiis reprehenderit, placeat neque perspiciatis vero
-                explicabo tempora, dignissimos accusantium inventore ducimus!
-              </p>
-              <p class="name"><a href="">Ellie</a> / Samsung</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                fuga libero nulla eveniet aperiam laborum, quis provident
-                quibusdam officiis reprehenderit, placeat neque perspiciatis vero
-                explicabo tempora, dignissimos accusantium inventore ducimus!
-              </p>
-              <p class="name"><a href="">Ellie</a> / Samsung</p>
-            </div>
-            <img
-            src="imgs/testimonial/people1.jpg"
-            alt="People"
-            class="testimonial__avatar"
-          />
-          </div>
-        </div>
-      </div>
-        </section>
-    
-        <!-- Contact -->
-        <section id="contact" class="section">
-          <h1 class="contact__title">Let's talk</h1>
-          <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
-          <div class="contact__links">
-            <a href="https://github.com/dream-ellie" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank">
-              <i class="fa fa-linkedin-square"></i>
-            </a>
-          </div>
-          <p class="contact__rights">
-            2020 Dream Coding Ellie - All rights reserved
-          </p>
-        </section>
-    
-        <!-- Arrow up -->
-        <button class="arrow-up">
-          <i class="fas fa-arrow-up"></i>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
         </button>
-  </body>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <div class="home__container">
+            <h1 class="home__tittle" style="color: #2D2D2D;">이정원 강사님<br /><span style="font-size:80%;">감사합니다♥</span>
+            </h1>
+            <h2 class="home__description" style="color: #2D2D2D;">제자들 올림<br>(2023.05.18~2023.11.11)</h2>
+            <button class="home__contact" style="color: #2D2D2D;">롤링페이퍼 보러 가기 </button>
+            <div>
+                <img src="imgs/profile.gif" alt="De31's profile photo" class="home__avatar"
+                    style="background-color: azure;" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="about" class="section">
+        <div class="section__container">
+            <h1>제자들의 마음을 전합니다..</h1>
+            <br>
+            <hr>
+            <div class="testimonials">
+                <!--박성호-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            박성호
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            강사님 저는 아직 하찮고 보잘 것 없는 지식을 가져서 하산할 수 없습니다ㅠㅠ<br>
+                            어디에 계시든 찾아뵙겠습니다..<br>
+                            항상 따뜻하고 인자하신 웃음으로 맞이해주셔서 감사했습니다<br>
+                            예,, 항상 감사드리고 항상 존경하고 사랑하고 최고였습니다 강사님 최고!!
+                        </p>
+                    </div>
+                </div>
+                <!--박시윤-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            박시윤
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--박성호-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            박성호
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            강사님 저는 아직 하찮고 보잘 것 없는 지식을 가져서 하산할 수 없습니다ㅠㅠ<br>
+                            어디에 계시든 찾아뵙겠습니다..<br>
+                            항상 따뜻하고 인자하신 웃음으로 맞이해주셔서 감사했습니다<br>
+                            예,, 항상 감사드리고 항상 존경하고 사랑하고 최고였습니다 강사님 최고!!
+                        </p>
+                    </div>
+                </div>
+                <!--박시윤-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            박시윤
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--손유정-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            손유정
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!--심현우-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            6개월이란 긴 시간동안 저희를 위해 많이 애써주셔서 너무 감사드리고<br>
+                            이렇게 재밌고 알찬 강의를 들을 수 있어서 행복했습니다!
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            심현우
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--양현준-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            양현준
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!--윤세종-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            윤세종
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--이경민-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            이경민
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!--이경현-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            이정원 강사님! 새로운 환경에 빨리 적응 할 수 있도록<br>
+                            항상 편안한 분위기를 만들어 준 덕에 끝까지 할 수 있었습니다.<br>
+                            오랫동안! 신세 많이 졌습니다! 이 은혜는 평생···! 잊지 않겠습니다!!
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            이경현
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--이승환-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            이승환
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            강사님 그동안 고생 많으셨습니다.<br>
+                            항상 건강하세요!!
+                        </p>
+                    </div>
+                </div>
+                <!--이진경-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            강사님 지난 6개월 간 감사했습니다! <br>
+                            개인 역량 부족으로 수업을 이해하기는 힘들었지만 강사님의 스윗함에 항상 감동했습니다.<br>
+                            다방면으로 학생들을 챙겨주시고 질문하면 정성들여 신중하게 답해주셔서,<br>
+                            강사님을 찾아가는 게 어렵지 않아서 버틸 수 있었습니다. 강사님도 저희와 함께한 시간 동안 행복하셨길 바랍니다.<br>
+                            제가 가르쳤던 첫 제자들은 7년이 지난 지금도 기억이 납니다.<br>
+                            강사님도 장기간 강의를 하신 게 처음이라는 얘기를 들었는데 저희가 어떻게 기억될지 너무 궁금합니다.<br>
+                            제가 기억할 강사님만큼 따뜻한 추억으로 남으면 좋겠습니다.<br>
+                            지금까지 다정한 강사님께 수업을 들을 수 있어서 행복했습니다.<br>
+                            이정원 강사님, 감사합니다. 항상 행복하시길 바랍니다!
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            이진경
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--전성삼-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            전성삼
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!--정유나-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            정유나
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--정지은-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            정지은
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!--조성인-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            조성인
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--지민지-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            지민지
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            저의 첫 데이터 스승님으로 뵙게 되어 영광이었습니다.<br>
+                            매일 환한 미소로 반겨주시고 같이 고민도 나눠주셔서 감사합니다.<br>
+                            항상 건강하시고 다시 만날 수 있으면 좋겠습니다! 😄
+                        </p>
+                    </div>
+                </div>
+                <!--지혜현-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            지혜현
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--최예진-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            최예진
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!--하유현-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            하유현
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--하율-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            하 율
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            강사님과 사람들 덕분에 6개월이<br>
+                            너무 뜻 깊은 시간이 되었습니다 :)<br>
+                            좋은 소식들고 꼭 찾아 뵙겠습니다 감사합니다!
+                        </p>
+                    </div>
+                </div>
+                <!--한서영-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            강사님 6개월 동안 정말 수고 많으셨고 감사했습니다 ♡<br>
+                            저희 런치팸 잊으시면 안돼요 ~ (˘̩̩ε˘̩ƪ) <br>
+                            추운 날씨 감기 조심하시고 적게 일하시고 많이 버세요 강사님 ㅠ_ㅠ<br>
+                            앞으로도 좋은 일만 있으시길 바람니다 !!!! <br>
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            한서영
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <!--현수진-->
+                <div class="testimonial">
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            현수진
+                        </div>
+                    </div>
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            --
+                        </p>
+                    </div>
+                </div>
+                <!--황종민-->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            전 양 손 살치살 소고기 들고 갑니다.<br> 강사님 덕분에 빅데이터 양성가 과정<br> 쉽게 배우고 갑니다 쉽다 쉬워~
+                        </p>
+                    </div>
+                    <div class="shape-container">
+                        <div class="shape-text">
+                            황종민
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
 </html>

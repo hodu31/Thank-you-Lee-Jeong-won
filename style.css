@@ -9,7 +9,7 @@
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-backgroundblue: #0c92db;    ;
+    --color-backgroundblue: #0c92db;    
     --color-blue: #73aace;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
@@ -40,9 +40,10 @@
   }
   
   body {
-    font-family: 'Open Sans',sans-serif ;
+    font-family: 'Nanum Gothic Coding', monospace;
     margin: 0;
     cursor: default;
+    
   }
   #messageForm textarea {
     width: 100%;
@@ -167,7 +168,7 @@
 
 /* Home */
   #home {
-    background: url('imgs/background.png')  center/cover no-repeat;
+    background: url('imgs/background.jpg')  center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -191,7 +192,7 @@
     font-weight: var(--weight-bold);
     margin: 24px;
     padding: 8px 12px;
-    border : 2px solid var(--color-white);
+    border : 2px solid var(--color-);
     border-radius: var(--size-border-radius);
   }
 
@@ -444,6 +445,24 @@
   background-color: var(--color-dark-white);
 }
 
+/*home*/
+.shape-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape-text {
+  text-align: center;
+  font-size: 45px;
+  color: black;
+}
 
 /* Testimonial */
 #testimonials {
@@ -451,7 +470,9 @@
 }
 
 .testimonials {
-  margin: 40px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 
 .testimonial {
@@ -476,6 +497,7 @@
 }
 
 .testimonial__speech-bubble {
+  margin-top: 2%;
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
@@ -582,4 +604,6 @@
     width: 80px;
     height: 80px;
   }
+
+  
 }
